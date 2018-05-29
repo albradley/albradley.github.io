@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Complete Website</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap4/js/jquery.min.js"></script>
+    <script src="bootstrap4/js/bootstrap.js"></script>
+    <script src="bootstrap4/js/jquery.easing.min.js"></script>
+    <script src="bootstrap4/js/smoothScroll.js"></script>
+    <script>
+        $('a[href^="#"]').smoothPageScroll();
+    </script>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            color:darkblue;
+        }
+
+        .navbar {
+            background: black;
+            border: 0;
+            border-radius: 0;
+            letter-spacing: 4px;
+            margin-bottom: 0;
+
+        }
+
+        .navbar .navbar-nav li a {
+            color: green;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .navbar .navbar-nav li a:hover {
+            color: purple;
+            transition: 2.5s;
+        }
+
+        .navbar .navbar-nav li.active a {
+            background: black;
+            color: silver;
+        }
+
+        .navbar .navbar-brand {
+            color: purple;
+            font-weight: bolder;
+        }
+
+        .navbar .navbar-brand:hover {
+            transition: 0.8ms;
+
+        }
+
+        /*style for section one*/
+        #one {
+            background: url(pictures/tribe_2.jpg);
+            background-position: center;
+            height: 100%;
+            
+        }
+
+        .jumbotron {
+            background: transparent;
+            color: black;
+        }
+
+        #two {
+            background: silver;
+            height: 100%;
+            color: green;
+        }
+
+        #two .glyphicon {
+            font-size: 80px;
+            color: #9391ff;
+        }
+
+        /*style to center all sections vertically*/
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #three {
+            background-color: gray;
+            color: black;
+        }
+
+        .jimia {
+            font-weight: bold;
+            color: green;
+        }
+
+        #four {
+            background-color: wheat;
+            height: 100%;
+            text-align: center;
+        }
+
+        #four .glyphicon {
+            font-size: 80px;
+            color: red;
+        }
+
+        #five {
+            background-color: #ffffff;
+            height: 70%;
+            text-align: center;
+        }
+
+        .yubu {
+            border-bottom: 1px black solid;
+            margin: auto;
+            padding: 16px;
+        }
+
+        #six {
+            background-color: blue;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        form {
+            width: 30%;
+            border: 1px solid #5427ff;
+            margin: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .xyz {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 12px;
+            box-sizing: border-box;
+        }
+
+        .hop {
+            width: 60%;
+            background-color: red;
+            color: black;
+            margin: auto;
+            margin-bottom: 15px;
+        }
+
+        .hop:hover {
+            transition: 1.5s;
+            color: green;
+        }
+
+        .start {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brandon Techmaker</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#two">Services</a></li>
+                <li><a href="#three">Contact</a></li>
+                <li><a href="#four">Products</a></li>
+                <li><a href="#five">Portfolio</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="one">
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Best Computing Service</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque cupiditate dolorum est et fuga
+                minus nulla porro possimus saepe, sequi similique, tempora, voluptas? Dolorem est incidunt quaerat
+                suscipit tempore!</p>
+        </div>
+    </div>
+</section>
+<section id="two">
+
+    <div class="container">
+        <h2 class="start text-center">Our services</h2>
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-apple"></span>
+                <h3>Repairs</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam corporis cupiditate
+                    dignissimos ducimus ex excepturi, laborum maxime nisi obcaecati quisquam rem sit velit vitae
+                    voluptates. Corporis modi molestias quod?</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-adjust"></span>
+                <h3>Appliances</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam corporis cupiditate
+                    dignissimos ducimus ex excepturi, laborum maxime nisi obcaecati quisquam rem sit velit vitae
+                    voluptates. Corporis modi molestias quod?</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-alert"></span>
+                <h3>Pay back</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam corporis cupiditate
+                    dignissimos ducimus ex excepturi, laborum maxime nisi obcaecati quisquam rem sit velit vitae
+                    voluptates. Corporis modi molestias quod?</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="three">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="jimia text-center">Our contacts</h1>
+            </div>
+        </div>
+        <table class="table table-bordered">
+            <form action="">
+
+                <div class="xyz form-group">
+                    <input type="text" class="form-control" placeholder="Names">
+                </div>
+
+                <div class="xyz form-group">
+                    <input type="Email" class="form-control" placeholder="Email">
+                </div>
+
+                <div class="xyz form-group">
+                    <input type="Phone Number" class="form-control" placeholder="Phone Number">
+                </div>
+                <div class=" xyz textarea">
+                    <textarea class="xyz" placeholder="Comments"></textarea>
+                </div>
+                <button class="hop btn btn-danger btn-block">Submit</button>
+
+            </form>
+
+            <tr>
+                <th>Town</th>
+                <th>Building</th>
+                <th>Contacts</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Nairobi</td>
+                <td>Kenya Plaza</td>
+                <td>0786957351</td>
+                <td>nairoberi@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Mombasa</td>
+                <td>Mash Center</td>
+                <td>0784532726</td>
+                <td>mashento@yahoo.com</td>
+            </tr>
+            <tr>
+                <td>Kisumu</td>
+                <td>Lake side Building</td>
+                <td>0784635241</td>
+                <td>victis01@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+</section>
+<section id="four">
+    <div class="container rap">
+        <h1 class="text-center">PRODUCTS</h1>
+        <div class="row">
+            <div class="col-sm-3">
+                <span class="glyphicon glyphicon-apple"></span>
+                <h2>Safcom logos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur impedit iure pariatur quis
+                    sequi soluta tempora veritatis vero vitae voluptas. Accusamus delectus in necessitatibus
+                    perspiciatis provident quidem quo tenetur ut?</p>
+            </div>
+            <div class="col-sm-3">
+                <span class="glyphicon glyphicon-earphone"></span>
+                <h2>Telkom Sign</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto explicabo pariatur quaerat,
+                    unde vero. Animi, commodi cupiditate debitis doloremque enim, error impedit molestias perspiciatis
+                    placeat porro quaerat quos voluptatum.</p>
+            </div>
+            <div class="col-sm-3">
+                <span class="glyphicon glyphicon-envelope"></span>
+                <h2>Airtel Brands</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores cupiditate dolore ipsa
+                    itaque, quam reiciendis rem sequi sit. Ab consequatur cum earum fugit harum libero, molestiae nihil
+                    porro ratione.</p>
+            </div>
+            <div class="col-sm-3">
+                <span class="glyphicon glyphicon-inbox"></span>
+                <h2>Significant Memes</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae maxime mollitia neque porro
+                    quaerat quam velit voluptas. Adipisci cum deleniti est et eum expedita maxime officia praesentium,
+                    ullam voluptatum.</p>
+            </div>
+            <!--End of row one-->
+            <div class="col-sm-3">
+                <span class="glyphicon glyphicon-import"></span>
+                <h2>Etisalat Makes</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores deserunt dicta distinctio
+                    eius in iste nihil omnis quasi quia, reprehenderit repudiandae sapiente sit soluta vitae? Architecto
+                    dolores iure vel.</p>
+            </div>
+            <div class="col-sm-3">
+                <span class="glyphicon glyphicon-cloud-upload"></span>
+                <h2>Mtn Finances</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam id iste quisquam unde?
+                    Distinctio doloremque eaque fugiat hic mollitia praesentium rem velit voluptas. Ab facilis placeat
+                    quibusdam repudiandae tempore.</p>
+            </div>
+            <div class="col-sm-3">
+                <span class="glyphicon glyphicon-floppy-disk"></span>
+                <h2>Haltel Icons</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet cum dolore doloribus ea
+                    error facere harum id ipsam iure labore necessitatibus placeat quae, quibusdam repellat repellendus
+                    tenetur, voluptatibus.</p>
+            </div>
+            <div class="col-sm-3">
+                <span class="glyphicon glyphicon-fire"></span>
+                <h2>Tigo Investments</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequatur dicta, dignissimos
+                    ducimus eius illo ipsum molestias nulla optio pariatur quo recusandae reiciendis rem repudiandae
+                    sint sit sunt, vel, voluptatem.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="five">
+    <div class="container">
+        <h1 class="yubu text-center">Portfolio</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Laptop Repairs</h2>
+                <span class="opts"><img src="index01." alt=""></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum, distinctio dolores eaque ipsa
+                    laborum quibusdam quos ratione repudiandae tempore, totam voluptatem voluptates. Eveniet id minima
+                    reprehenderit tempora voluptates voluptatibus?</p>
+            </div>
+            <div class="col-sm-4">
+                <h2>Hands 0n It</h2>
+                <span class="opts"><img src="images01.jpg" alt=""></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores delectus deleniti
+                    dolores eaque eum fugiat impedit in nobis numquam, odio officiis quasi, repellat unde voluptas
+                    voluptates voluptatibus! Dolorem, obcaecati!</p>
+            </div>
+            <div class="col-sm-4">
+                <h2>Macbook</h2>
+                <span class="opts"><img src="images02.jpg\" alt=""></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aliquam aperiam
+                    architecto asperiores autem doloremque ea earum error impedit labore, magnam nobis obcaecati,
+                    possimus quisquam similique tempora tempore vero.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="six">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                <img src="free-template-download.png" alt="">
+            </div>
+            <div class="col-sm-5">
+                <p1>The oomla! name is used under a limited license from Open Source Matters in the United Kingdom and
+                    other countries. LTheme.com is not affiliated with or endorsed by Open Source Matters or the oomla!
+                    Projects.
+                </p1>
+                <p2>Designed by Theme.com - Powered by oomla!</p2>
+            </div>
+            <div class="col-sm-5">
+                <footer></footer><p1>Copyright © 2013 Theme.com. All rights reserved. Many features demonstrated on this website are
+                    available only in template and website.
+                </p1>
+                <p2><strong><em>All stock photos used on this template demo site are only for demo purposes and not included in the
+                    template package.</em></strong>
+                </p2>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
